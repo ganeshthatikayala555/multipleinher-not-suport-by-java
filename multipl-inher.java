@@ -1,23 +1,19 @@
-class Bat {
+///C++
+
+class Eat {
 public:
     void eat() {
         cout << "Bat is eating" << endl;
     }
-    void fly() {
-        cout << "Bat is flying" << endl;
-    }
 };
-class Parrot {
+class Bat {
 public:
-    void eat() {
-        cout << "Parrot is eating" << endl;
-    }
     void fly() {
         cout << "Parrot is flying" << endl;
     }
 };
 
-class   Bird : public Bat, public Parrot {
+class   Bat : public Eat, public Fly {
 public:
     // Bird inherits both Parrot and Bird
 };
